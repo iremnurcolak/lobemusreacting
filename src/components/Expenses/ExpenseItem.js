@@ -6,6 +6,7 @@ import Card from "../UI/Card";
 const ExpenseItem = (props) => {
   //function ExpenseItem(props) {}
 
+  //DO NOT USE title = ... ! REACT HANDLES ASSIGNING VALUE WITH setTitle
   const [title, setTitle] = useState(props.title);
   //title: current state element, setTitle: function for updating title
 
