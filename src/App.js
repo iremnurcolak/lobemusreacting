@@ -26,7 +26,7 @@ const DUMMY_EXPENSES = [
 
 function App() {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
-
+  const [showNewExpenseScreen, setShowNewExpenseScreen] = useState(false);
   const addExpenseHandler = (expense) => {
     //the line above uses previous state which is unreliable
     //setExpenses([expense, ...expenses]);
